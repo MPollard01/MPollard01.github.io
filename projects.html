@@ -4,16 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Mark Pollard" />
+    <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -21,8 +17,9 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/bootswatch-theme.css" />
+    <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>My Profile</title>
+    <title>My Profile - Projects</title>
   </head>
   <body>
     <nav
@@ -39,10 +36,6 @@
         <small class="bio"
           >Hi, my name is Mark I'm a graduate software engineer.</small
         >
-        <div class="media-icons border-bottom pb-3">
-          <i class="devicon-github-original"></i>
-          <i class="devicon-linkedin-plain"></i>
-        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -77,55 +70,30 @@
       </div>
     </nav>
     <main id="main">
-      <section class="bg-secondary about">
-        <div class="row">
-          <div class="col">
-            <h1>Mark Pollard</h1>
-            <h4 class="mb-4">Graduate C# Developer</h4>
-            <p class="mb-3">
-              I am a graduate software engineer that loves to code. View my
-              portfolio for a demonstration of my work.
-            </p>
-            <a href="projects.html" class="btn btn-lg btn-primary"
-              >View Portfolio</a
-            >
-          </div>
-          <div class="col">
-            <img
-              class="img-fluid profile-pic"
-              src="images/profile-2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      <section class="hobbies-interests">
-        <article>
-          <h2>Hobbies</h2>
-          <ol>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-          </ol>
-        </article>
-        <article>
-          <h2>Interests</h2>
-          <ol>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-          </ol>
-        </article>
-      </section>
-
-      <div class="push"></div>
-
-      <footer class="footer">
-        <small>
-          Copyright &#169; Sparta Global 2022
-          <cite>by M. Pollard</cite>
-        </small>
-      </footer>
+      <div class="container-fluid">
+        <h1 class="project-header">Projects</h1>
+        <table class="table table-light table-striped">
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Agile Project</td>
+              <td>Did some stuff with user stories</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>API Project</td>
+              <td>Made requests</td>
+              <td>2021</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
   </body>
 </html>
