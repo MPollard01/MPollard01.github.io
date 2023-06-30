@@ -491,6 +491,7 @@ body {
 
 .logos {
   display: flex;
+  gap: 5px;
   position: absolute;
   bottom: 10px;
   right: 10px;
